@@ -10,31 +10,26 @@ class RegistrationController extends Controller
 {
     public function create()
     {
-        // return view('posts.index');
         return view('registration.create');
     }
 
     public function store()
     {
         // Validate the form
-            $this->validate(request(),[
-                'name' => 'required',
-                'email' => 'required|email',
-                'password' => 'required',
-            ]);
-        
-        // Create and save the user
-            $user = User::create([
-                'name' => request('name'),
-                'email' => request('email'),
-                'password' => Hash::make(request('password')),
-            ]);
+        $this->validate(request(),[
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
 
-        //Sign them in
-            auth()->login($user);
+        $user = new User;
+        $user->store(request());
 
-        //Redirect to the home page
+    //Sign them in
+        auth()->login($user);
 
-            return redirect()->home();
+    //Redirect to the home page
+
+        return redirect()->home();
     }
 }

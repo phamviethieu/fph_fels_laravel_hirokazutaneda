@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>hogehoge</title>
+    <title>
+        Confirmation
+    </title>
 </head>
 <body>
-	hogehoge
+    {{Auth::user()}}
 </body>
 </html>
