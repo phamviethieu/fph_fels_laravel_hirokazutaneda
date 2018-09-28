@@ -4,6 +4,10 @@
 Route::get('/','TestsController@index')->name('home');
 
 
+Route::get('/posts', 'PostsController@create');
+Route::post('/posts', 'PostsController@store');
+
+
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 
