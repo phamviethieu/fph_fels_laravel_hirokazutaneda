@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>test</title>
+    <title>
+        Home
+    </title>
 </head>
 <body>
-    test
+    {{Auth::user()}}
 </body>
 </html>
