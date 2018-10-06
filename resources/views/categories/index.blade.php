@@ -20,7 +20,7 @@
 
     @include('layouts.nav')
 
-    @include('layouts.content')
+    @include('categories.content')
 
     @include('layouts.footer')
 

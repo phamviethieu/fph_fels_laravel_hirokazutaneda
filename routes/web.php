@@ -4,7 +4,7 @@
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/categories', 'CategoriesController@index');
-Route::get('/categories/{category}', 'CategoriesController@show');
+Route::get('/categories/{category_id}', 'LessonsController@startLesson');
 
 
 Route::get('/posts', 'PostsController@create');

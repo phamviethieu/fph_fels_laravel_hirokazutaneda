@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,6 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
+<<<<<<< Updated upstream
     <title>Categories</title>
 
     <!-- Bootstrap core CSS -->
@@ -219,5 +224,41 @@
         <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
       </div>
     </footer>
+=======
+    <title>Registration</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/register.css" rel="stylesheet">
+  </head>
+
+  <body>
+      <form class="form-signin">
+      <div class="text-center mb-4">
+        <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Welcom to E-learning</h1>
+      </div>
+
+      <div class="form-label-group">
+        <input type="name" id="inputEmail" class="form-control" placeholder="Name" required>
+        <label for="inputEmail">Name</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputEmail">Email address</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <label for="inputPassword">Password</label>
+      </div>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+    </form>
+>>>>>>> Stashed changes
   </body>
 </html>

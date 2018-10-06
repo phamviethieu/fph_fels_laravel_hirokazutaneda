@@ -1,6 +1,10 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use App\Category;
+//Suse Illuminate\Pagination\LengthAwarePaginator;
+use lluminate\Database\Eloquent\Collection;
+
 class CategoriesController extends Controller
 {
     /**
@@ -10,7 +14,13 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::orderBy('created_at', 'DESC')->paginate(9);
+
+        //I can use also this one.
+        //$categories = new LengthAwarePaginator($categories->forPage(1, 9),
+                                               //$categories->count(), 9,
+                                               //1, ['path' => url('/history')]);
+        return view('categories.index', compact('categories') );
     }
     /**
      * Show the form for creating a new resource.
@@ -39,8 +49,11 @@ class CategoriesController extends Controller
      */
     public function show()
     {
-        //
-        return view('categories.list');
+
+
+        // $categories = Category::all();
+        // dd($categories);
+        // return view('categories.layouts.content', compact('categories') );
     }
     /**
      * Show the form for editing the specified resource.

@@ -1,7 +1,7 @@
 <header>
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
+            <a href="/categories" class="navbar-brand d-flex align-items-center">
                 <circle cx="12" cy="13" r="4"></circle></svg>
                 <strong>Categories</strong>
             </a>
