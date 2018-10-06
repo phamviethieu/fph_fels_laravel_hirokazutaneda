@@ -1,6 +1,6 @@
 <?php
 
-// Route::get('/URL','Controller名@viewファイル')
+// Route::get('/URL','Controller名@クラス名')
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/categories', 'CategoriesController@index');
