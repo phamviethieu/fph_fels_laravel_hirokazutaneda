@@ -6,10 +6,13 @@
                 <strong>Categories</strong>
             </a>
             <a href="#" class="navbar-brand d-flex align-items-center">
-            	My Page
+                My Page
+            </a>
+            <a href="/users" class="navbar-brand d-flex align-items-center">
+                User list
             </a>
             <a href="#" class="navbar-brand d-flex align-items-center">
-            	Words Learned
+                Words Learned
             </a>
         </div>
     </div>

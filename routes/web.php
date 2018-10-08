@@ -3,6 +3,8 @@
 // Route::get('/URL','Controller名@viewファイル')
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::get('/users', 'UserslistController@index');
+
 Route::get('/categories', 'CategoriesController@index');
 Route::get('/categories/{category}', 'CategoriesController@show');
 
